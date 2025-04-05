@@ -21,6 +21,6 @@ public class April05
     [Fact]
     public void Test1()
     {
-        Assert.True(false);
+        Assert.Equal("true", "false");
     }
 }
