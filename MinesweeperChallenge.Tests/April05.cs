@@ -24,6 +24,12 @@ public class April05
         Assert.Equal("*", Minesweeper());
     }
 
+    [Fact]
+    public void Test2()
+    {
+        Assert.Equal("0", Minesweeper("."));
+    }
+
     private static string Minesweeper()
     {
         return "*";
