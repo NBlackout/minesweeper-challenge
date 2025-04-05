@@ -26,6 +26,6 @@ public class April05
 
     private static string Minesweeper()
     {
-        return "true";
+        return "*";
     }
 }
