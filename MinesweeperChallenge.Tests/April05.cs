@@ -48,6 +48,8 @@ public class April05
             return "0";
         if (s == "**")
             return "**";
+        if (s == "***")
+            return "***";
         return "*";
     }
 }
