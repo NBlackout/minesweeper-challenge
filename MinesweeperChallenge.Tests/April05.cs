@@ -59,6 +59,7 @@ public class April05
         if (!s.Contains("."))
             return s;
 
+        return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
         if (s == ".")
             return "0";
         if (s == "..")
