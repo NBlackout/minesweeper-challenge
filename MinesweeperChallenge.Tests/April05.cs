@@ -56,6 +56,9 @@ public class April05
 
     private static string Minesweeper(string s)
     {
+        if (!s.Contains("."))
+            return s;
+
         if (s == ".")
             return "0";
         if (s == "..")
