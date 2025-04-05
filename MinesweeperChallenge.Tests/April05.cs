@@ -64,7 +64,5 @@ public class April05
         if (s == "..")
             return "00";
         return "000";
-
-        return s;
     }
 }
