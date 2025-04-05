@@ -21,7 +21,7 @@ public class April05
     [Fact]
     public void Test1()
     {
-        Assert.Equal("*", Minesweeper());
+        Assert.Equal("*", Minesweeper("*"));
     }
 
     [Fact]
@@ -30,7 +30,7 @@ public class April05
         Assert.Equal("0", Minesweeper("."));
     }
 
-    private static string Minesweeper()
+    private static string Minesweeper(string s)
     {
         return "*";
     }
