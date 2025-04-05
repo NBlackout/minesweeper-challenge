@@ -60,10 +60,5 @@ public class April05
             return s;
 
         return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
-        if (s == ".")
-            return "0";
-        if (s == "..")
-            return "00";
-        return "000";
     }
 }
