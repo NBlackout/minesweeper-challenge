@@ -42,6 +42,12 @@ public class April05
         Assert.Equal("***", Minesweeper("***"));
     }
 
+    [Fact]
+    public void Test5()
+    {
+        Assert.Equal("00", Minesweeper(".."));
+    }
+
     private static string Minesweeper(string s)
     {
         if (s == ".")
