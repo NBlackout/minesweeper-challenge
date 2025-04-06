@@ -85,15 +85,16 @@ public class April06
         if (!s.Contains("*"))
             return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
 
+        var output = "";
         if (s == "*.")
-            return "*1";
+            output = "*1";
         if (s == "**.")
-            return "**1";
+            output = "**1";
         if (s == "*..")
-            return "*10";
+            output = "*10";
         if (s == ".*")
-            return "1*";
+            output = "1*";
 
-        return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
+        return output;
     }
 }
