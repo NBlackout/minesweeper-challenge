@@ -88,6 +88,15 @@ public class April06
             return "*10";
 
         var output = "";
+        foreach (char c in s)
+        {
+            if (c == '*')
+                output += '*';
+            else
+                output += '1';
+        }
+
+        return output;
         if (s == "*.")
             output = "*1";
         if (s == "**.")
