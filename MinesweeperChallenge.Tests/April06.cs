@@ -88,12 +88,20 @@ public class April06
             return "*10";
 
         var output = "";
+        char? previousChar = null;
         foreach (char c in s)
         {
             if (c == '*')
                 output += '*';
             else
-                output += '1';
+            {
+                if (previousChar == '*')
+                    output += '1';
+                else
+                    output += '1';
+            }
+
+            previousChar = c;
         }
 
         return output;
