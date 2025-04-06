@@ -80,8 +80,6 @@ public class April06
 
     private static string Minesweeper(string s)
     {
-        if (!s.Contains("."))
-            return s;
         if (!s.Contains("*"))
             return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
         if (s == "*..")
