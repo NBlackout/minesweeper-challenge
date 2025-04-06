@@ -82,6 +82,8 @@ public class April06
     {
         if (!s.Contains("."))
             return s;
+        if (!s.Contains("*"))
+            return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
 
         if (s == "*.")
             return "*1";
@@ -92,8 +94,6 @@ public class April06
         if (s == ".*")
             return "1*";
 
-        if (!s.Contains("*"))
-            return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
         return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
     }
 }
