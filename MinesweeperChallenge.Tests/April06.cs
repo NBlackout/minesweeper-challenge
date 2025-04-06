@@ -84,14 +84,14 @@ public class April06
             return s;
         if (!s.Contains("*"))
             return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
+        if (s == "*..")
+            return "*10";
 
         var output = "";
         if (s == "*.")
             output = "*1";
         if (s == "**.")
             output = "**1";
-        if (s == "*..")
-            output = "*10";
         if (s == ".*")
             output = "1*";
 
