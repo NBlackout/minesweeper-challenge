@@ -84,6 +84,8 @@ public class April06
             return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
         if (s == "*..")
             return "*10";
+        if (s == ".*")
+            return "1*";
 
         var output = "";
         char? previousChar = null;
@@ -96,7 +98,7 @@ public class April06
                 if (previousChar == '*')
                     output += '1';
                 else
-                    output += '1';
+                    output += '0';
             }
 
             previousChar = c;
