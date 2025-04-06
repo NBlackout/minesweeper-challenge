@@ -97,13 +97,5 @@ public class April06
         }
 
         return output;
-        if (s == "*.")
-            output = "*1";
-        if (s == "**.")
-            output = "**1";
-        if (s == ".*")
-            output = "1*";
-
-        return output;
     }
 }
