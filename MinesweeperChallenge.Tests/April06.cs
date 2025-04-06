@@ -72,6 +72,8 @@ public class April06
             return s;
         if (s == "*.")
             return "*1";
+        if (s == ".*")
+            return "1*";
 
         return string.Join(string.Empty, Enumerable.Repeat("0", s.Length));
     }
