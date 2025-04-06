@@ -78,6 +78,8 @@ public class April06
             return s;
         if (s == "*.")
             return "*1";
+        if (s == "**.")
+            return "**1";
         if (s == ".*")
             return "1*";
 
